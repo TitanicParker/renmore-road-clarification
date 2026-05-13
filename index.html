@@ -3,118 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Renmore Road Planning Appeal: Request for Transparent Reporting</title>
-  <meta name="description" content="A community petition requesting clearer public reporting on the Renmore Road planning appeal and the affected residential context at Dun na Mara." />
+  <title>58 Renmore Road: Request for Clear Reporting</title>
+  <meta name="description" content="A plain-language community page asking for clearer reporting on the 58 Renmore Road planning appeal and its impact on Dun na Mara and nearby residents." />
   <style>
-    :root {
-      --bg: #f7f5ef;
-      --ink: #202020;
-      --muted: #5f5b52;
-      --panel: #ffffff;
-      --line: #ddd7ca;
-      --accent: #164e63;
-      --accent-2: #0f766e;
-      --danger: #7f1d1d;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; color: var(--ink); background: var(--bg); }
-    header { background: linear-gradient(135deg, #103b4a, #0f766e); color: white; padding: 4rem 1.25rem 3rem; }
-    .wrap { width: min(980px, calc(100% - 2rem)); margin: 0 auto; }
-    h1 { max-width: 820px; margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.04em; }
-    h2 { margin-top: 0; font-size: clamp(1.35rem, 3vw, 2rem); letter-spacing: -0.02em; }
-    h3 { margin-bottom: .35rem; }
-    .lede { max-width: 780px; font-size: 1.2rem; color: rgba(255,255,255,.9); }
-    main { padding: 2rem 0 4rem; }
-    section, .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 1.4rem; margin: 1rem 0; box-shadow: 0 12px 30px rgba(0,0,0,.05); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-    .badge { display: inline-block; padding: .25rem .6rem; border-radius: 999px; background: #e6fffb; color: #134e4a; font-weight: 700; font-size: .82rem; margin-bottom: .75rem; }
-    .warning { border-left: 5px solid var(--danger); background: #fff7f7; }
-    blockquote { margin: 1rem 0; padding: 1rem; border-left: 5px solid var(--accent); background: #f1f7f8; color: #18333b; }
-    label { display: block; font-weight: 700; margin-top: 1rem; }
-    input, textarea { width: 100%; margin-top: .35rem; padding: .8rem; border: 1px solid var(--line); border-radius: 12px; font: inherit; background: white; }
-    textarea { min-height: 170px; }
-    button, .button { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; margin-top: 1rem; padding: .9rem 1.1rem; border: 0; border-radius: 999px; background: var(--accent); color: white; font-weight: 800; text-decoration: none; cursor: pointer; }
-    button.secondary, .button.secondary { background: var(--accent-2); }
-    .muted { color: var(--muted); }
-    .small { font-size: .92rem; }
-    footer { padding: 2rem 0; color: var(--muted); border-top: 1px solid var(--line); }
+    :root { --bg:#f7f5ef; --ink:#1f2933; --muted:#5d6470; --panel:#fff; --line:#ded8cc; --accent:#164e63; --accent2:#0f766e; --warn:#7f1d1d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.55; color:var(--ink); background:var(--bg); }
+    header { background:linear-gradient(135deg,#103b4a,#0f766e); color:white; padding:3.5rem 1.25rem 2.5rem; }
+    .wrap { width:min(980px,calc(100% - 2rem)); margin:0 auto; }
+    h1 { max-width:860px; margin:0 0 1rem; font-size:clamp(2rem,5vw,4rem); line-height:1.05; letter-spacing:-.04em; }
+    h2 { margin-top:0; font-size:clamp(1.35rem,3vw,2rem); letter-spacing:-.02em; }
+    h3 { margin:.2rem 0 .35rem; }
+    .lede { max-width:820px; font-size:1.2rem; color:rgba(255,255,255,.92); }
+    main { padding:2rem 0 4rem; }
+    section,.card { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:1.35rem; margin:1rem 0; box-shadow:0 12px 30px rgba(0,0,0,.05); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:1rem; }
+    .badge { display:inline-block; padding:.25rem .6rem; border-radius:999px; background:#e6fffb; color:#134e4a; font-weight:800; font-size:.82rem; margin-bottom:.75rem; }
+    .warning { border-left:5px solid var(--warn); background:#fff7f7; }
+    blockquote { margin:1rem 0; padding:1rem; border-left:5px solid var(--accent); background:#f1f7f8; color:#18333b; }
+    label { display:block; font-weight:800; margin-top:1rem; }
+    input,textarea,select { width:100%; margin-top:.35rem; padding:.8rem; border:1px solid var(--line); border-radius:12px; font:inherit; background:white; }
+    textarea { min-height:190px; }
+    button,.button { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; margin:.75rem .35rem 0 0; padding:.9rem 1.1rem; border:0; border-radius:999px; background:var(--accent); color:white; font-weight:850; text-decoration:none; cursor:pointer; }
+    button.secondary,.button.secondary { background:var(--accent2); }
+    button.ghost { background:#4b5563; }
+    .muted { color:var(--muted); }
+    .small { font-size:.92rem; }
+    .contact-list code { background:#f3f4f6; padding:.1rem .25rem; border-radius:5px; }
+    footer { padding:2rem 0; color:var(--muted); border-top:1px solid var(--line); }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Renmore Road planning appeal: a request for transparent reporting</h1>
-      <p class="lede">This page asks the Galway City Tribune to clarify the geographic and procedural framing used in reporting a planning appeal concerning 58 Renmore Road and the residential context adjoining Dun na Mara.</p>
+      <h1>58 Renmore Road: please report the location plainly</h1>
+      <p class="lede">A newspaper article described this planning appeal as being in the “Lough Atalia area”. The site is 58 Renmore Road, beside established homes and directly beside Dun na Mara. Residents are asking for a clear correction or clarification.</p>
     </div>
   </header>
+
   <main class="wrap">
     <section>
-      <span class="badge">Core concern</span>
-      <h2>The article softened the geography and abstracted the affected residents</h2>
-      <p>The report described the development as being in the “Lough Atalia area”, while the planning materials identify the site as 58 Renmore Road, in an established residential context and directly affecting nearby residents, including Dun na Mara.</p>
-      <p>This is not a minor naming preference. It changes the reader’s mental map. “Lough Atalia area” suggests a broader urban corridor. “Renmore Road, adjacent to Dun na Mara” identifies the actual residential setting and the people most directly affected.</p>
+      <span class="badge">The issue in plain English</span>
+      <h2>What happened</h2>
+      <p>Planning permission was sought for apartments at 58 Renmore Road. Local residents objected. Galway City Council refused permission. The developer appealed. The appeal succeeded.</p>
+      <p>When the story appeared in the Galway City Tribune, the development was described as being in the “Lough Atalia area”. That wording matters. It makes the site sound like a general city-centre or dockside development area, rather than a Renmore Road residential site affecting nearby homes, including Dun na Mara.</p>
+      <blockquote>This is a request for accuracy, not special treatment: call the site what it is, explain the local context, and do not blur the people most affected.</blockquote>
     </section>
+
     <div class="grid">
-      <div class="card"><h3>1. Geographic reframing</h3><p>“Renmore Road beside Dun na Mara” becomes “the Lough Atalia area”. This widens and softens the setting.</p></div>
-      <div class="card"><h3>2. Institutional abstraction</h3><p>The dispute is presented as a technical disagreement inside the planning system, rather than as a local residential objection that was sustained before being overridden on appeal.</p></div>
-      <div class="card"><h3>3. Stakeholder displacement</h3><p>The residents most directly affected are rhetorically moved away from the centre of the story. The focus shifts to the developer, Council, Commission, and inspector.</p></div>
+      <div class="card"><h3>1. The location was softened</h3><p>“58 Renmore Road, beside Dun na Mara” became “the Lough Atalia area”. That changes how readers understand the story.</p></div>
+      <div class="card"><h3>2. The local objection was blurred</h3><p>The Council refusal followed local objections about density, character, overlooking, and residential amenity. That context should remain visible.</p></div>
+      <div class="card"><h3>3. The affected residents were pushed into the background</h3><p>The story becomes about the developer, the Council, the Commission, and an inspector. The nearby residents become almost invisible.</p></div>
     </div>
+
     <section>
-      <h2>Why this matters</h2>
-      <p>The original planning application was refused by Galway City Council after objections concerning density, neighbourhood character, overlooking, and residential amenity. The developer appealed. The appeal body then granted permission, despite the refusal context and despite the inspector’s recommendation to refuse.</p>
-      <p>When that outcome was reported to a city- and county-wide readership, the broader “Lough Atalia” framing risked making the development appear more routine, more urban, and less intrusive into an established residential area than residents believe it is.</p>
-      <blockquote>We are not asking for favourable reporting. We are asking for precise reporting: name the actual road, identify the affected residential context, and make clear that the local objections were sustained before the appeal outcome changed the result.</blockquote>
+      <h2>The maneuver</h2>
+      <p>The maneuver is <strong>geographic reframing</strong> plus <strong>stakeholder displacement</strong>.</p>
+      <p>Geographic reframing means replacing a specific, locally meaningful place — Renmore Road beside Dun na Mara — with a broader and softer label: “Lough Atalia area”. Stakeholder displacement means moving the directly affected residents out of the centre of the story and replacing them with institutional language about planning bodies, appeals, and recommendations.</p>
+      <p>The result is that a contested residential planning decision can appear more routine, technical, and inevitable than it felt to the residents whose objections had initially succeeded.</p>
     </section>
+
     <section class="warning">
-      <h2>About the article text</h2>
-      <p>This page does not reproduce the full newspaper article. To avoid copyright issues, it uses short quoted phrases and summarizes the relevant wording.</p>
+      <h2>Copyright and fairness note</h2>
+      <p>This page does not reproduce the full newspaper article. It quotes only the key phrase being challenged and summarizes the concern. The aim is a factual clarification, not a personal attack on any journalist.</p>
     </section>
+
     <section id="petition">
-      <span class="badge">Petition email</span>
-      <h2>Send a request for clarification</h2>
-      <p>Use the form below to open a pre-filled email in your own mail app. You can edit it before sending. No personal data is collected by this page.</p>
+      <span class="badge">Take action</span>
+      <h2>Send an email asking for clarification</h2>
+      <p>Fill in your name and connection. Choose who to contact. Click the button to open a pre-filled email in your own mail app. You can edit it before sending. This website does not collect names, emails, or signatures.</p>
+
       <label for="name">Your name</label>
       <input id="name" placeholder="Your name" />
+
       <label for="relationship">Your connection to the issue</label>
       <input id="relationship" placeholder="Example: Resident of Dun na Mara / Renmore Road area" />
-      <label for="message">Message</label>
-      <textarea id="message">I support a clarification regarding the Galway City Tribune article “Apartments good to go on appeal” published on 8 May 2026.
 
-The development should be described transparently as a Renmore Road planning matter affecting the adjoining established residential context, including Dun na Mara, rather than primarily as a general “Lough Atalia area” development.
+      <label for="target">Who do you want to email?</label>
+      <select id="target" onchange="updateDraft()">
+        <option value="tribune">Galway City Tribune / newsroom first</option>
+        <option value="press">Press Ombudsman escalation</option>
+        <option value="planning">Planning bodies / public record</option>
+        <option value="all">All listed contacts</option>
+      </select>
 
-The original application was refused by Galway City Council following objections concerning residential character, density, and amenity. The appeal outcome should therefore be reported with clear reference to the local context and the residents directly affected.
+      <label for="message">Email text</label>
+      <textarea id="message"></textarea>
 
-I ask the Galway City Tribune to clarify this geographic and procedural framing in any follow-up coverage.</textarea>
-      <button onclick="sendPetition()">Open petition email</button>
-      <button class="secondary" onclick="copyMessage()">Copy message</button>
-      <p class="small muted">Suggested primary recipient: news@ctribune.ie. Consider contacting the Press Ombudsman only after first giving the publication an opportunity to resolve the matter.</p>
+      <button onclick="sendPetition()">Open email draft</button>
+      <button class="secondary" onclick="copyMessage()">Copy email text</button>
+      <button class="ghost" onclick="updateDraft()">Reset suggested wording</button>
+
+      <p class="small muted">Best first step: write to the newspaper. Use the Press Ombudsman only if the publication does not resolve the concern. Contact planning bodies only for planning-record issues, not as a substitute for a press complaint.</p>
     </section>
-    <section>
-      <h2>Suggested escalation path</h2>
-      <p><strong>Step 1:</strong> Write to the journalist or newsroom asking for clarification.</p>
-      <p><strong>Step 2:</strong> If unresolved, submit a complaint to the Press Ombudsman / Press Council of Ireland, focusing on accuracy and potentially misleading presentation.</p>
-      <p><strong>Step 3:</strong> Keep planning bodies separate unless your message concerns the planning process itself. The newspaper-framing complaint belongs primarily with the newspaper and, if necessary, the press complaints process.</p>
+
+    <section class="contact-list">
+      <h2>Relevant contacts</h2>
+      <p><strong>Galway City Tribune / Connacht Tribune newsroom:</strong> <code>news@ctribune.ie</code></p>
+      <p><strong>Press Ombudsman / Press Council of Ireland:</strong> <code>info@pressombudsman.ie</code></p>
+      <p><strong>An Coimisiun Pleanala communications:</strong> <code>communications@pleanala.ie</code></p>
+      <p><strong>An Coimisiun Pleanala appeals:</strong> <code>appeals@pleanala.ie</code></p>
+      <p class="small muted">Email addresses should be checked before large-scale sharing. If any address is corrected, update this page before circulating it further.</p>
     </section>
   </main>
-  <footer><div class="wrap small"><p>This community page is intended to make a factual, good-faith request for clarification. It should avoid personal attacks, speculation about motive, or claims that cannot be evidenced from the planning record and published article.</p></div></footer>
+
+  <footer>
+    <div class="wrap small">
+      <p>This page is a community request for clear public reporting about 58 Renmore Road. Keep messages factual, civil, and specific.</p>
+    </div>
+  </footer>
+
   <script>
-    function sendPetition() {
+    const contacts = {
+      tribune: { to: 'news@ctribune.ie', cc: '' },
+      press: { to: 'info@pressombudsman.ie', cc: 'news@ctribune.ie' },
+      planning: { to: 'communications@pleanala.ie', cc: 'appeals@pleanala.ie' },
+      all: { to: 'news@ctribune.ie', cc: 'info@pressombudsman.ie,communications@pleanala.ie,appeals@pleanala.ie' }
+    };
+
+    const drafts = {
+      tribune: `Dear Editor,\n\nI am asking the Galway City Tribune to clarify its reporting on the article “Apartments good to go on appeal”, published on 8 May 2026.\n\nThe article describes the development as being in the “Lough Atalia area”. The site is 58 Renmore Road, beside established homes and directly beside Dun na Mara. That distinction matters. “Lough Atalia area” gives readers a broader and softer impression of the location, while “58 Renmore Road” identifies the actual residential context and the people most affected.\n\nThe original planning application was refused by Galway City Council after local objections about residential character, density, overlooking, and amenity. The developer then appealed successfully. In that context, the public report should make the Renmore Road and Dun na Mara context plain.\n\nPlease publish a clarification or ensure that any follow-up coverage identifies the site clearly as 58 Renmore Road and explains the affected residential context.`,
+      press: `Dear Press Ombudsman,\n\nI wish to raise a concern about the Galway City Tribune article “Apartments good to go on appeal”, published on 8 May 2026.\n\nMy concern is that the article described the development as being in the “Lough Atalia area”, while the site is 58 Renmore Road, beside established homes and directly beside Dun na Mara. This wording risks giving readers a softened and less precise impression of the location and of the residents affected.\n\nThe planning application had been refused by Galway City Council after local objections. The developer appealed successfully. In that context, the distinction between a broad “Lough Atalia area” description and the specific Renmore Road residential context is material.\n\nI have asked the publication to clarify the matter. If it is not resolved, I ask that this be considered as a complaint about accuracy and potentially misleading presentation.`,
+      planning: `Dear An Coimisiun Pleanala,\n\nI am writing in relation to public understanding of the planning appeal concerning 58 Renmore Road.\n\nLocal reporting has described the development as being in the “Lough Atalia area”. Residents are concerned that this description does not make the Renmore Road and Dun na Mara residential context clear.\n\nPlease confirm the correct site address and public-reference wording for the appeal record, so that residents can refer to the matter accurately in correspondence with the newspaper and any relevant public bodies.`
+    };
+
+    function updateDraft() {
+      const target = document.getElementById('target').value;
+      document.getElementById('message').value = drafts[target] || drafts.tribune;
+    }
+
+    function buildBody() {
       const name = document.getElementById('name').value.trim() || '[Name]';
       const relationship = document.getElementById('relationship').value.trim() || '[Connection to the issue]';
-      const body = document.getElementById('message').value.trim() + `\n\nSigned,\n${name}\n${relationship}`;
-      const subject = 'Request for clarification: Renmore Road planning appeal article';
-      const to = 'news@ctribune.ie';
-      const cc = 'administrator@pressombudsman.ie,communications@pleanala.ie';
-      const mailto = `mailto:${encodeURIComponent(to)}?cc=${encodeURIComponent(cc)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      return document.getElementById('message').value.trim() + `\n\nSigned,\n${name}\n${relationship}`;
+    }
+
+    function sendPetition() {
+      const target = document.getElementById('target').value;
+      const selected = contacts[target] || contacts.tribune;
+      const subject = target === 'press' ? 'Concern about accuracy: 58 Renmore Road planning appeal article' : 'Request for clarification: 58 Renmore Road planning appeal article';
+      const mailto = `mailto:${encodeURIComponent(selected.to)}?cc=${encodeURIComponent(selected.cc)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(buildBody())}`;
       window.location.href = mailto;
     }
+
     async function copyMessage() {
-      const name = document.getElementById('name').value.trim() || '[Name]';
-      const relationship = document.getElementById('relationship').value.trim() || '[Connection to the issue]';
-      const body = document.getElementById('message').value.trim() + `\n\nSigned,\n${name}\n${relationship}`;
-      await navigator.clipboard.writeText(body);
-      alert('Message copied.');
+      await navigator.clipboard.writeText(buildBody());
+      alert('Email text copied.');
     }
+
+    updateDraft();
   </script>
 </body>
 </html>
